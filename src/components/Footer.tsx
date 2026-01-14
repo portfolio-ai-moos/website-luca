@@ -145,10 +145,10 @@ const Footer: React.FC = () => {
               © {currentYear} Luscombe Lifestyle. {t('rights')}
             </p>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-white/60 hover:text-[#0066ff] transition-colors">
+              <a href="/privacyverklaring" className="text-white/60 hover:text-[#0066ff] transition-colors">
                 {t('privacy')}
               </a>
-              <a href="#" className="text-white/60 hover:text-[#0066ff] transition-colors">
+              <a href="/algemene-voorwaarden" className="text-white/60 hover:text-[#0066ff] transition-colors">
                 {t('terms')}
               </a>
             </div>
