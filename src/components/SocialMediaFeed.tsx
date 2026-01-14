@@ -18,7 +18,7 @@ const mockInstagramPosts = [
   },
   {
     id: 2,
-    imageUrl: '/images/progression-images/PHOTO-2026-01-14-15-42-59 2.jpg',
+    imageUrl: '/images/progression-images/PHOTO-2026-01-14-15-42-59 5.jpg',
     caption: 'Client transformation alert! 🚀 3 months of hard work paying off',
     likes: 189,
     comments: 28,
