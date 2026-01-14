@@ -42,37 +42,37 @@ const About: React.FC = () => {
     {
       id: 1,
       image: '/images/progression-images/PHOTO-2026-01-14-15-42-59.jpg',
-      title: 'Sarah\'s Transformatie',
-      story: 'Sarah, 28 jaar, begon haar reis met het doel om sterker en zelfverzekerder te worden. In 6 maanden tijd heeft ze niet alleen fysiek enorme stappen gezet, maar ook mentaal veel groei doorgemaakt. "Luca\'s aanpak was perfect voor mij - de combinatie van persoonlijke begeleiding en de flexibiliteit van online coaching maakte het mogelijk om het te combineren met mijn drukke baan."',
-      results: '• 8kg vetverlies\n• +3kg spiermassa\n• Personal records op alle lifts\n• Meer energie en zelfvertrouwen'
+      title: 'Robin\'s Transformatie',
+      story: 'Robin, 32 jaar, wilde werken aan zijn kracht en spieropbouw. Met een gericht trainingsschema en voedingsadvies heeft hij indrukwekkende resultaten behaald. "Luca zit er erg kort op en is niet bang om je de waarheid te vertellen. Dit werkt voor mij erg goed, omdat ik soms de harde waarheid nodig heb om de volgende stappen te kunnen zetten in mijn proces."',
+      results: '• +8kg spiermassa\n• Vetpercentage gereduceerd\n• Aanzienlijke krachttoename\n• Betere discipline en mindset'
     },
     {
       id: 2,
       image: '/images/progression-images/PHOTO-2026-01-14-15-42-59_5.jpg',
-      title: 'Mike\'s Transformatie',
-      story: 'Mike, 35 jaar, wilde terug in vorm komen na jarenlang weinig aan sport te hebben gedaan. Met een focus op duurzame progressie en blessurepreventie hebben we gewerkt aan het opbouwen van een sterke basis. "Ik had nooit gedacht dat ik op mijn leeftijd nog zo resultaten kon behalen. Luca\'s kennis als fysiotherapeut in opleiding maakte echt het verschil."',
-      results: '• 12kg lichaamsgewicht verloren\n• Aanzienlijke toename in kracht\n• Geen blessures meer\n• Betere houding en mobiliteit'
+      title: 'Cerezo\'s Transformatie',
+      story: 'Cerezo, 29 jaar, wilde zijn doelen bereiken en zijn lichaam transformeren. Met intensieve training en persoonlijke begeleiding heeft hij fantastische resultaten geboekt. "De coaching met Luca heb ik als erg professioneel ervaren, hij heeft kennis en passie voor wat hij doet en dit droeg hij ook over aan mij. Ik ben mede-dankzij Luca in me beste shape ooit gekomen."',
+      results: '• 15kg lichaamsgewicht verloren\n• Strakke en gespierde physique\n• Extreme krachttoename\n• Professionele mindset'
     },
     {
       id: 3,
       image: '/images/progression-images/PHOTO-2026-01-14-15-42-59_2.jpg',
-      title: 'Emma\'s Transformatie',
-      story: 'Emma, 24 jaar, studeerde en wilde fitter en gezonder worden. We hebben een plan gemaakt dat perfect paste bij haar drukke studierooster. "De online coaching gaf me de vrijheid om te trainen wanneer het mij uitkwam, met de persoonlijke aandacht die ik nodig had. Ik voel me sterker dan ooit!"',
-      results: '• 6kg vetverlies\n• Verbeterde conditie\n• Meer spierdefinitie\n• Gezondere relatie met voeding'
+      title: 'Simone\'s Transformatie',
+      story: 'Simone, 26 jaar, wilde als vrouw sterker en fitter worden. Ze zocht een coach waar ze zich volledig op haar gemak bij voelde. "Luca neemt de tijd, geeft heldere uitleg en motiveert je op een fijne manier. Als vrouw voel ik me volledig op mijn gemak bij hem. Ik kan hem zeker aanraden aan andere vrouwen die goed en prettig willen trainen!"',
+      results: '• 7kg vetverlies\n• +4kg spiermassa\n• Feminijn en gespierd lichaam\n• Meer zelfvertrouwen'
     },
     {
       id: 4,
       image: '/images/progression-images/PHOTO-2026-01-14-15-42-59_3.jpg',
-      title: 'David\'s Transformatie',
-      story: 'David, 42 jaar, ervaren sporter die een plateau wilde doorbreken. Met geavanceerde trainingstechnieken en voedingsstrategieën hebben we nieuwe doelen bereikt. "Luca\'s expertise op het gebied van bodybuilding heeft me geholpen om door mijn plateau te breken en doelen te bereiken die ik voor onmogelijk hield."',
-      results: '• +5kg spiermassa\n• Vetpercentage naar beneden\n• Nieuwe personal records\n• Betere trainingstechniek'
+      title: 'Patrick\'s Transformatie',
+      story: 'Patrick, 38 jaar, wilde terug in shape komen na een periode van weinig beweging. Met een stapsgewijs plan heeft hij zijn doelen overtroffen. "De persoonlijke aanpak van Luca heeft mij geholpen om consistent te blijven. Ik voel me nu fitter dan 10 jaar geleden en heb veel geleerd over correcte uitvoering."',
+      results: '• 18kg afgevallen\n• Aanzienlijke spieropbouw\n• Betere gezondheidswaarden\n• Duurzame levensstijlverandering'
     },
     {
       id: 5,
       image: '/images/progression-images/PHOTO-2026-01-14-15-42-59_4.jpg',
-      title: 'Lisa\'s Transformatie',
-      story: 'Lisa, 31 jaar, moeder van twee die weer in vorm wilde komen. We hebben een realistisch plan gemaakt dat paste bij haar drukke leven als moeder en professional. "Dankzij Luca\'s flexibele aanpak heb ik weer tijd gevonden voor mezelf en voel ik me fitter dan ooit tevoren."',
-      results: '• 10kg afgevallen\n• Meer energie dagelijks\n• Sterker en fitter gevoel\n• Goed voorbeeld voor kinderen'
+      title: 'Fleur\'s Transformatie',
+      story: 'Fleur, 30 jaar, wilde werken aan haar conditie en kracht. Met een gebalanceerd programma heeft ze indrukwekkende resultaten behaald. "Luca\'s expertise als fysiotherapeut in opleiding gaf mij het vertrouwen om te trainen zonder blessures. Ik ben sterker dan ooit en voel me geweldig!"',
+      results: '• 10kg vetverlies\n• +6kg spiermassa\n• Uitstekende conditie\n• Blessurevrij en energiek'
     }
   ]
 
