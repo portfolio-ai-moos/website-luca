@@ -181,7 +181,22 @@ const Services: React.FC = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.4, duration: 0.8 }}
+          className="mt-24 mb-16"
         >
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.5, duration: 0.8 }}
+            className="text-center mb-16"
+          >
+            <h3 className="text-3xl md:text-4xl font-bold text-[#090c45] mb-4">
+              Jouw transformatie in stappen
+            </h3>
+            <p className="text-lg text-gray-600">
+              Van intake tot duurzaam resultaat in vier duidelijke fases
+            </p>
+          </motion.div>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
@@ -207,25 +222,43 @@ const Services: React.FC = () => {
             ].map((item, index) => (
               <motion.div
                 key={index}
-                className="text-center"
-                initial={{ opacity: 0, y: 30 }}
+                className="text-center group"
+                initial={{ opacity: 0, y: 50 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: 0.5 + index * 0.1, duration: 0.5 }}
+                transition={{ delay: 0.6 + index * 0.15, duration: 0.6 }}
+                whileHover={{ y: -10 }}
               >
-                <div className="relative mb-6">
-                  <div className="w-20 h-20 mx-auto bg-gradient-to-br from-[#0066ff] to-[#0052cc] text-white rounded-2xl flex items-center justify-center text-2xl font-bold shadow-xl">
+                <motion.div 
+                  className="relative mb-6"
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <div className="w-20 h-20 mx-auto bg-gradient-to-br from-[#0066ff] to-[#0052cc] text-white rounded-2xl flex items-center justify-center text-2xl font-bold shadow-xl group-shadow-2xl">
                     {item.step}
                   </div>
                   {index < 3 && (
-                    <div className="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-[#0066ff] to-transparent"></div>
+                    <motion.div 
+                      className="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-[#0066ff] to-transparent"
+                      initial={{ scaleX: 0 }}
+                      animate={inView ? { scaleX: 1 } : {}}
+                      transition={{ delay: 1 + index * 0.2, duration: 0.5 }}
+                    />
                   )}
-                </div>
-                <h4 className="text-xl font-bold text-[#090c45] mb-3">
+                </motion.div>
+                <motion.h4 
+                  className="text-xl font-bold text-[#090c45] mb-3"
+                  whileHover={{ scale: 1.05 }}
+                >
                   {item.title}
-                </h4>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                </motion.h4>
+                <motion.p 
+                  className="text-gray-600 text-sm leading-relaxed"
+                  initial={{ opacity: 0 }}
+                  animate={inView ? { opacity: 1 } : {}}
+                  transition={{ delay: 1 + index * 0.2, duration: 0.5 }}
+                >
                   {item.desc}
-                </p>
+                </motion.p>
               </motion.div>
             ))}
           </div>
