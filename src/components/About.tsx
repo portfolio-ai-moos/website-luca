@@ -29,7 +29,7 @@ const About: React.FC = () => {
     {
       icon: '⚕️',
       title: 'Momenteel stage bij Fysiotherapie van Feyenoord Academy.',
-      description: 'Stage bij de fysiotherafie van Feyenoord Academy'
+      description: 'Stage bij de fysiotherapie van Feyenoord Academy'
     },
     {
       icon: '📜',

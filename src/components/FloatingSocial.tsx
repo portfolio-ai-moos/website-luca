@@ -42,7 +42,11 @@ const FloatingSocial: React.FC = () => {
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              className={`w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-700 transition-all duration-300 ${social.color} text-white group`}
+              className={`w-12 h-12 rounded-full shadow-lg flex items-center justify-center text-white transition-all duration-300 ${
+                social.label === 'Instagram' ? 'bg-pink-500 hover:bg-pink-600' : 
+                social.label === 'TikTok' ? 'bg-black hover:bg-gray-800' : 
+                'bg-blue-600 hover:bg-blue-700'
+              } group`}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               initial={{ x: -50, opacity: 0 }}
