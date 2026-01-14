@@ -18,6 +18,7 @@ const WhatsAppButton: React.FC = () => {
   return (
     <motion.button
       onClick={handleClick}
+      suppressHydrationWarning
       className="fixed bottom-8 right-8 z-40 bg-[#25d366] text-white p-4 rounded-full shadow-2xl hover:bg-[#22c65f] transition-all duration-300 lg:bottom-8 lg:right-8 sm:bottom-32"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}

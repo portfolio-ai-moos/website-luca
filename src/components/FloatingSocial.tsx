@@ -42,6 +42,7 @@ const FloatingSocial: React.FC = () => {
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
+              suppressHydrationWarning
               className={`w-12 h-12 rounded-full shadow-lg flex items-center justify-center text-white transition-all duration-300 ${
                 social.label === 'Instagram' ? 'bg-pink-500 hover:bg-pink-600' : 
                 social.label === 'TikTok' ? 'bg-black hover:bg-gray-800' : 
@@ -76,6 +77,7 @@ const FloatingSocial: React.FC = () => {
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
+              suppressHydrationWarning
               className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
                 social.label === 'Instagram' ? 'bg-pink-500 text-white' : 
                 social.label === 'TikTok' ? 'bg-black text-white' : 
