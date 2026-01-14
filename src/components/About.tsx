@@ -48,28 +48,28 @@ const About: React.FC = () => {
     },
     {
       id: 2,
-      image: '/images/progression-images/PHOTO-2026-01-14-15-42-59 5.jpg',
+      image: '/images/progression-images/PHOTO-2026-01-14-15-42-59_5.jpg',
       title: 'Mike\'s Transformatie',
       story: 'Mike, 35 jaar, wilde terug in vorm komen na jarenlang weinig aan sport te hebben gedaan. Met een focus op duurzame progressie en blessurepreventie hebben we gewerkt aan het opbouwen van een sterke basis. "Ik had nooit gedacht dat ik op mijn leeftijd nog zo resultaten kon behalen. Luca\'s kennis als fysiotherapeut in opleiding maakte echt het verschil."',
       results: '• 12kg lichaamsgewicht verloren\n• Aanzienlijke toename in kracht\n• Geen blessures meer\n• Betere houding en mobiliteit'
     },
     {
       id: 3,
-      image: '/images/progression-images/PHOTO-2026-01-14-15-42-59 2.jpg',
+      image: '/images/progression-images/PHOTO-2026-01-14-15-42-59_2.jpg',
       title: 'Emma\'s Transformatie',
       story: 'Emma, 24 jaar, studeerde en wilde fitter en gezonder worden. We hebben een plan gemaakt dat perfect paste bij haar drukke studierooster. "De online coaching gaf me de vrijheid om te trainen wanneer het mij uitkwam, met de persoonlijke aandacht die ik nodig had. Ik voel me sterker dan ooit!"',
       results: '• 6kg vetverlies\n• Verbeterde conditie\n• Meer spierdefinitie\n• Gezondere relatie met voeding'
     },
     {
       id: 4,
-      image: '/images/progression-images/PHOTO-2026-01-14-15-42-59 3.jpg',
+      image: '/images/progression-images/PHOTO-2026-01-14-15-42-59_3.jpg',
       title: 'David\'s Transformatie',
       story: 'David, 42 jaar, ervaren sporter die een plateau wilde doorbreken. Met geavanceerde trainingstechnieken en voedingsstrategieën hebben we nieuwe doelen bereikt. "Luca\'s expertise op het gebied van bodybuilding heeft me geholpen om door mijn plateau te breken en doelen te bereiken die ik voor onmogelijk hield."',
       results: '• +5kg spiermassa\n• Vetpercentage naar beneden\n• Nieuwe personal records\n• Betere trainingstechniek'
     },
     {
       id: 5,
-      image: '/images/progression-images/PHOTO-2026-01-14-15-42-59 4.jpg',
+      image: '/images/progression-images/PHOTO-2026-01-14-15-42-59_4.jpg',
       title: 'Lisa\'s Transformatie',
       story: 'Lisa, 31 jaar, moeder van twee die weer in vorm wilde komen. We hebben een realistisch plan gemaakt dat paste bij haar drukke leven als moeder en professional. "Dankzij Luca\'s flexibele aanpak heb ik weer tijd gevonden voor mezelf en voel ik me fitter dan ooit tevoren."',
       results: '• 10kg afgevallen\n• Meer energie dagelijks\n• Sterker en fitter gevoel\n• Goed voorbeeld voor kinderen'
