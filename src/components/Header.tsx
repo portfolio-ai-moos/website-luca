@@ -53,7 +53,7 @@ const Header: React.FC = () => {
             <img
               src="/images/logo.png"
               alt="Luscombe Lifestyle Logo"
-              className="w-10 h-10"
+              className="w-12 h-12"
             />
             <span className="text-xl md:text-2xl font-bold text-white">
               LUSCOMBE LIFESTYLE
