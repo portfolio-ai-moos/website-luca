@@ -81,7 +81,7 @@ const Testimonials: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             {t('testimonialsTitle')}
           </h2>
-          <p className="text-xl text-white/80 mb-4">
+          <p className="text-xl text-white/80 mb-4 font-normal">
             {t('testimonialsSubtitle')}
           </p>
           <div className="w-24 h-1 bg-[#0066ff] mx-auto"></div>
@@ -98,9 +98,9 @@ const Testimonials: React.FC = () => {
             className="bg-white rounded-2xl p-8 md:p-12 shadow-2xl"
           >
             <div className="flex items-start mb-6">
-              <FaQuoteLeft className="text-[#0066ff] text-3xl mr-4" />
+              <FaQuoteLeft className="text-[#0066ff] text-2xl mr-4 mt-1" />
               <div className="flex-1">
-                <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+                <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6 font-normal">
                   {testimonials[currentIndex].text.nl}
                 </p>
                 <div className="flex items-center justify-between">
@@ -167,10 +167,10 @@ const Testimonials: React.FC = () => {
                   <FaStar key={i} className="text-yellow-400 text-lg mr-1" />
                 ))}
               </div>
-              <p className="text-white/90 text-sm mb-4 line-clamp-3">
+              <p className="text-white/90 text-sm mb-4 line-clamp-3 font-normal leading-relaxed">
                 {testimonial.text.nl}
               </p>
-              <p className="text-white font-semibold">
+              <p className="text-white font-semibold text-base">
                 - {testimonial.name}
               </p>
             </motion.div>
