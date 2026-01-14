@@ -101,7 +101,7 @@ const Testimonials: React.FC = () => {
               <FaQuoteLeft className="text-[#0066ff] text-3xl mr-4" />
               <div className="flex-1">
                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-                  {testimonials[currentIndex].text[t('language') === 'nl' ? 'nl' : 'en']}
+                  {testimonials[currentIndex].text.nl}
                 </p>
                 <div className="flex items-center justify-between">
                   <div>
@@ -168,7 +168,7 @@ const Testimonials: React.FC = () => {
                 ))}
               </div>
               <p className="text-white/90 text-sm mb-4 line-clamp-3">
-                {testimonial.text[t('language') === 'nl' ? 'nl' : 'en']}
+                {testimonial.text.nl}
               </p>
               <p className="text-white font-semibold">
                 - {testimonial.name}
