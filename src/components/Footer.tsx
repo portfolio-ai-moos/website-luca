@@ -155,7 +155,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center text-xs text-white/40">
             <div className="mb-2 md:mb-0">
-              KVK: [Your KVK Number] | BTW: [Your BTW Number]
+              KVK: 97370509 | BTW: NL005265317B18
             </div>
             <div>
               Made by{' '}
