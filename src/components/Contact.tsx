@@ -238,19 +238,6 @@ const Contact: React.FC = () => {
                 </motion.button>
               </div>
             </div>
-
-            {/* Quick Facts */}
-            <div className="bg-gradient-to-r from-[#0066ff] to-[#0052cc] p-8 rounded-2xl text-white">
-              <h3 className="text-2xl font-bold mb-4">
-                {t('quickFacts', 'Snelle Feiten')}
-              </h3>
-              <ul className="space-y-2">
-                <li>✓ {t('fact1', '10+ jaar ervaring in fitness')}</li>
-                <li>✓ {t('fact2', 'Gecertificeerd personal trainer')}</li>
-                <li>✓ {t('fact3', 'Student fysiotherapie')}</li>
-                <li>✓ {t('fact4', '100+ tevreden klanten')}</li>
-              </ul>
-            </div>
           </motion.div>
         </div>
       </div>

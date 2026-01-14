@@ -140,7 +140,7 @@ const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center mb-4">
             <p className="text-white/60 text-sm mb-4 md:mb-0">
               © {currentYear} Luscombe Lifestyle. {t('rights')}
             </p>
@@ -150,6 +150,22 @@ const Footer: React.FC = () => {
               </a>
               <a href="#" className="text-white/60 hover:text-[#0066ff] transition-colors">
                 {t('terms')}
+              </a>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row justify-between items-center text-xs text-white/40">
+            <div className="mb-2 md:mb-0">
+              KVK: [Your KVK Number] | BTW: [Your BTW Number]
+            </div>
+            <div>
+              Made by{' '}
+              <a 
+                href="https://www.simplifywithai.nl" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white/60 hover:text-[#0066ff] transition-colors"
+              >
+                Simplify with AI
               </a>
             </div>
           </div>
