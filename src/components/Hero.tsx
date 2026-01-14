@@ -3,7 +3,7 @@
 import React from 'react'
 import { useLanguage } from '@/lib/language'
 import { motion } from 'framer-motion'
-import { FaArrowDown, FaPlay, FaInstagram, FaTiktok } from 'react-icons/fa'
+import { FaArrowDown, FaPlay, FaInstagram, FaTiktok, FaLinkedin } from 'react-icons/fa'
 import Image from 'next/image'
 
 const Hero: React.FC = () => {
@@ -71,15 +71,6 @@ const Hero: React.FC = () => {
               >
                 {t('ctaStart')}
               </motion.button>
-              
-              <motion.button
-                className="px-8 py-4 bg-transparent text-white font-semibold rounded-lg border-2 border-white hover:bg-white hover:text-[#090c45] transition-all duration-300 flex items-center justify-center gap-2"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <FaPlay className="text-sm" />
-                {t('watchVideo')}
-              </motion.button>
             </motion.div>
             
             {/* Social Media Follow */}
@@ -110,6 +101,16 @@ const Hero: React.FC = () => {
               >
                 <FaTiktok size={24} />
               </motion.a>
+              <motion.a
+                href="https://www.linkedin.com/in/luca-luscombe-83a6ab233"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-blue-400 transition-colors duration-300"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <FaLinkedin size={24} />
+              </motion.a>
             </motion.div>
           </motion.div>
 
@@ -130,23 +131,6 @@ const Hero: React.FC = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#090c45]/50 to-transparent"></div>
             </div>
-            
-            {/* Floating badges */}
-            <motion.div
-              className="absolute -top-4 -right-4 bg-white text-[#090c45] px-4 py-2 rounded-lg shadow-lg font-semibold"
-              animate={{ y: [-10, 10, -10] }}
-              transition={{ duration: 3, repeat: Infinity }}
-            >
-              10+ Jaar Ervaring
-            </motion.div>
-            
-            <motion.div
-              className="absolute -bottom-4 -left-4 bg-[#0066ff] text-white px-4 py-2 rounded-lg shadow-lg font-semibold"
-              animate={{ y: [10, -10, 10] }}
-              transition={{ duration: 3, repeat: Infinity, delay: 1 }}
-            >
-              Fysiotherapeut in opleiding
-            </motion.div>
           </motion.div>
         </div>
       </div>

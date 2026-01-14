@@ -54,27 +54,27 @@ const About: React.FC = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            ref={ref}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8 }}
+            className="space-y-6 text-lg leading-relaxed"
           >
-            <div className="space-y-6">
-              <p className="text-xl text-gray-700 leading-relaxed">
-                {t('aboutIntro')}
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                {t('aboutExperience')}
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                {t('aboutEducation')} {t('aboutEducationDetail', 'Naast mijn online coaching werk ik ook als personal trainer, waar ik dagelijks mensen begeleid in het verbeteren van techniek, kracht en belastbaarheid.')}
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                {t('aboutCurrent')} {t('aboutCurrentDetail', 'waar ik dagelijks werk met sporters op prestatie- en herstelniveau.')}
-              </p>
-              <p className="text-xl text-gray-700 font-semibold mt-6">
-                {t('aboutPhilosophy', 'Alles wat ik doe komt samen in mijn coaching: een combinatie van praktijkervaring, kennis van het menselijk lichaam en persoonlijke begeleiding, zodat jij slimmer traint, beter herstelt en duurzaam resultaat behaalt.')}
-              </p>
-            </div>
+            <p>
+              Ik ben Luca, 24 jaar, online fitness & lifestyle coach met een sterke focus op krachttraining en duurzame progressie.
+            </p>
+            <p>
+              Ik train al meer dan 10 jaar in de sportschool en ben de afgelopen 2,5 jaar intensief bezig met bodybuilding en het optimaliseren van prestaties.
+            </p>
+            <p>
+              Naast mijn online coaching ben ik student fysiotherapie en werk ik als personal trainer en sportmasseur. In mijn werk begeleid ik mensen dagelijks bij het verbeteren van techniek, kracht en belastbaarheid.
+            </p>
+            <p>
+              Daarnaast loop ik stage binnen de fysiotherapieomgeving van de Feyenoord Academy, waar ik sporters ondersteun rondom prestatie, herstel en het verantwoord opbouwen van belastbaarheid.
+            </p>
+            <p>
+              Alles wat ik doe komt samen in mijn coaching: een combinatie van praktijkervaring, kennis van het menselijk lichaam en persoonlijke begeleiding, zodat jij slimmer traint, beter herstelt en duurzaam resultaat behaalt.
+            </p>
           </motion.div>
 
           <motion.div

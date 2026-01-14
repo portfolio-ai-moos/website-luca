@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaInstagram, FaTiktok } from 'react-icons/fa'
+import { FaInstagram, FaTiktok, FaLinkedin } from 'react-icons/fa'
 
 const FloatingSocial: React.FC = () => {
   const socialLinks = [
@@ -17,6 +17,12 @@ const FloatingSocial: React.FC = () => {
       href: 'https://tiktok.com/@luca.luscombe',
       color: 'hover:bg-black',
       label: 'TikTok'
+    },
+    {
+      icon: <FaLinkedin />,
+      href: 'https://www.linkedin.com/in/luca-luscombe-83a6ab233',
+      color: 'hover:bg-blue-600',
+      label: 'LinkedIn'
     }
   ]
 
@@ -67,7 +73,9 @@ const FloatingSocial: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
-                social.label === 'Instagram' ? 'bg-pink-500 text-white' : 'bg-black text-white'
+                social.label === 'Instagram' ? 'bg-pink-500 text-white' : 
+                social.label === 'TikTok' ? 'bg-black text-white' : 
+                'bg-blue-600 text-white'
               }`}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}

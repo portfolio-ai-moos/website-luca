@@ -134,7 +134,7 @@ const Services: React.FC = () => {
             <p className="text-gray-700 mb-8">
               {activeService === 'coaching' 
                 ? t('coachingDesc', 'Bij Luscombe Lifestyle Coaching geloof ik in een persoonlijke benadering. Ik bied je tools en inzichten die je helpen jouw potentieel te realiseren en een duurzame, positieve verandering te creëren.')
-                : t('trainingDesc', 'Bij Luscombe Lifestyle staat personal training voor doelgericht trainen met een duidelijke lijn. Ik help je bouwen aan een sterker, fitter lichaam dat past bij jouw niveau, doelen en dagelijkse ritme.')
+                : t('trainingDesc', 'Bij Luscombe Lifestyle staat Personal Training voor doelgericht trainen met een duidelijke lijn. Ik help je bouwen aan een sterker, fitter lichaam dat past bij jouw niveau, doelen en dagelijkse ritme.')
               }
             </p>
             <motion.button
@@ -180,41 +180,52 @@ const Services: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.8, duration: 0.8 }}
-          className="mt-20"
+          transition={{ delay: 0.4, duration: 0.8 }}
         >
-          <h3 className="text-2xl font-bold text-[#090c45] text-center mb-12">
-            {t('processTitle', 'Jouw transformatie in stappen')}
-          </h3>
-          <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#0066ff]"></div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { step: 1, title: t('step1', 'Intake'), desc: t('step1Desc', 'Persoonlijke kennismaking en doelbepaling') },
-              { step: 2, title: t('step2', 'Plan'), desc: t('step2Desc', 'Maatwerk schema voor voeding en training') },
-              { step: 3, title: t('step3', 'Uitvoering'), desc: t('step3Desc', 'Begeleiding en aanpassingen onderweg') },
-              { step: 4, title: t('step4', 'Resultaat'), desc: t('step4Desc', 'Duurzame transformatie en nieuwe leefstijl') }
+              {
+                step: '1',
+                title: 'Intake',
+                desc: 'We maken kennis en brengen jouw doelen, startpunt, leefstijl en eventuele blessures in kaart. Je krijgt meteen helderheid over wat haalbaar is en wat de slimste aanpak wordt.'
+              },
+              {
+                step: '2',
+                title: 'Plan',
+                desc: 'Je ontvangt een persoonlijk plan voor training en voeding, afgestemd op jouw niveau, agenda en voorkeuren. Inclusief duidelijke richtlijnen en doelen, zodat je precies weet wat je gaat doen en waarom.'
+              },
+              {
+                step: '3',
+                title: 'Uitvoering',
+                desc: 'Je voert het plan uit met begeleiding onderweg. We checken je progressie, houden techniek en herstel in de gaten en passen voeding of training aan wanneer dat nodig is. Zo blijf je vooruitgaan, ook als je planning verandert.'
+              },
+              {
+                step: '4',
+                title: 'Resultaat',
+                desc: 'Je bouwt niet alleen aan een beter lichaam, maar ook aan een routine die je kunt volhouden. Je leert hoe je je resultaat behoudt en hoe je zelfstandig verder kunt groeien met een sterke, gezonde leefstijl.'
+              }
             ].map((item, index) => (
               <motion.div
                 key={index}
-                className={`flex items-center mb-8 ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}
-                initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
-                animate={inView ? { opacity: 1, x: 0 } : {}}
-                transition={{ delay: 1 + index * 0.1, duration: 0.8 }}
+                className="text-center"
+                initial={{ opacity: 0, y: 30 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ delay: 0.5 + index * 0.1, duration: 0.5 }}
               >
-                <div className={`w-5/12 ${index % 2 === 0 ? 'text-left' : 'text-right'}`}>
-                  <h4 className="text-xl font-semibold text-[#090c45] mb-2">
-                    {item.title}
-                  </h4>
-                  <p className="text-gray-600">
-                    {item.desc}
-                  </p>
-                </div>
-                <div className="w-2/12 flex justify-center">
-                  <div className="w-12 h-12 bg-[#0066ff] text-white rounded-full flex items-center justify-center font-bold shadow-lg">
+                <div className="relative mb-6">
+                  <div className="w-20 h-20 mx-auto bg-gradient-to-br from-[#0066ff] to-[#0052cc] text-white rounded-2xl flex items-center justify-center text-2xl font-bold shadow-xl">
                     {item.step}
                   </div>
+                  {index < 3 && (
+                    <div className="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-[#0066ff] to-transparent"></div>
+                  )}
                 </div>
-                <div className="w-5/12"></div>
+                <h4 className="text-xl font-bold text-[#090c45] mb-3">
+                  {item.title}
+                </h4>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {item.desc}
+                </p>
               </motion.div>
             ))}
           </div>
