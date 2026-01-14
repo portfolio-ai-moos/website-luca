@@ -58,21 +58,21 @@ const About: React.FC = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
-            className="space-y-6 text-lg leading-relaxed"
+            className="space-y-8 text-lg leading-relaxed text-gray-700 md:text-xl"
           >
-            <p>
+            <p className="text-xl md:text-2xl">
               Ik ben Luca, 24 jaar, online fitness & lifestyle coach met een sterke focus op krachttraining en duurzame progressie.
             </p>
-            <p>
+            <p className="text-xl md:text-2xl">
               Ik train al meer dan 10 jaar in de sportschool en ben de afgelopen 2,5 jaar intensief bezig met bodybuilding en het optimaliseren van prestaties.
             </p>
-            <p>
+            <p className="text-xl md:text-2xl">
               Naast mijn online coaching ben ik student fysiotherapie en werk ik als personal trainer en sportmasseur. In mijn werk begeleid ik mensen dagelijks bij het verbeteren van techniek, kracht en belastbaarheid.
             </p>
-            <p>
+            <p className="text-xl md:text-2xl">
               Daarnaast loop ik stage binnen de fysiotherapieomgeving van de Feyenoord Academy, waar ik sporters ondersteun rondom prestatie, herstel en het verantwoord opbouwen van belastbaarheid.
             </p>
-            <p>
+            <p className="text-xl md:text-2xl font-semibold text-[#090c45]">
               Alles wat ik doe komt samen in mijn coaching: een combinatie van praktijkervaring, kennis van het menselijk lichaam en persoonlijke begeleiding, zodat jij slimmer traint, beter herstelt en duurzaam resultaat behaalt.
             </p>
           </motion.div>
