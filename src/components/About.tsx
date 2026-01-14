@@ -27,7 +27,7 @@ const About: React.FC = () => {
       description: 'Wetenschappelijke kennis van het menselijk lichaam'
     },
     {
-      icon: '⚕️',
+      icon: '⚽',
       title: 'Momenteel stage bij Fysiotherapie van Feyenoord Academy.',
       description: 'Stage bij de fysiotherapie van Feyenoord Academy'
     },
