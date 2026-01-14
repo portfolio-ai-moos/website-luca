@@ -159,20 +159,20 @@ const About: React.FC = () => {
             {transformations.map((transformation, index) => (
               <motion.div
                 key={transformation.id}
-                className="relative group cursor-pointer"
+                className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 onClick={() => setSelectedTransformation(transformation.id)}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={inView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ delay: 1 + index * 0.1, duration: 0.5 }}
                 whileHover={{ scale: 1.05 }}
               >
-                <div className="relative overflow-hidden rounded-lg">
+                <div className="relative w-full h-48">
                   <Image
                     src={transformation.image}
                     alt={transformation.title}
-                    width={300}
-                    height={400}
-                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-110"
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 20vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-0 left-0 right-0 p-4">
@@ -210,13 +210,13 @@ const About: React.FC = () => {
               >
                 {transformations.find(t => t.id === selectedTransformation) && (
                   <div className="grid md:grid-cols-2 gap-8">
-                    <div className="relative">
+                    <div className="relative h-[600px] rounded-l-2xl overflow-hidden">
                       <Image
                         src={transformations.find(t => t.id === selectedTransformation)!.image}
                         alt={transformations.find(t => t.id === selectedTransformation)!.title}
-                        width={600}
-                        height={800}
-                        className="w-full h-full object-cover rounded-l-2xl"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 50vw"
                       />
                     </div>
                     <div className="p-8">
