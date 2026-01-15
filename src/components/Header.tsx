@@ -42,7 +42,7 @@ const Header: React.FC = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <nav className="container mx-auto px-6 py-4">
+      <nav className="container mx-auto px-4 sm:px-6 py-2 sm:py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.div
@@ -53,7 +53,7 @@ const Header: React.FC = () => {
             <img
               src="/images/logo.png"
               alt="Luscombe Lifestyle Logo"
-              className="w-24 h-24 md:w-32 md:h-32"
+              className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32"
             />
           </motion.div>
 

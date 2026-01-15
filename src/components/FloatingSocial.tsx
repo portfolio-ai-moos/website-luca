@@ -1,10 +1,12 @@
 'use client'
 
-import React from 'react'
-import { motion } from 'framer-motion'
-import { FaInstagram, FaTiktok, FaLinkedin } from 'react-icons/fa'
+import React, { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { FaInstagram, FaTiktok, FaLinkedin, FaShareAlt } from 'react-icons/fa'
 
 const FloatingSocial: React.FC = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
   const socialLinks = [
     {
       icon: <FaInstagram />,
@@ -63,37 +65,68 @@ const FloatingSocial: React.FC = () => {
         </div>
       </motion.div>
 
-      {/* Mobile - Bottom */}
-      <motion.div
-        className="fixed bottom-24 left-1/2 transform -translate-x-1/2 z-40 lg:hidden"
-        initial={{ y: 100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 2, duration: 0.5 }}
-      >
-        <div className="flex gap-3 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
-          {socialLinks.map((social, index) => (
-            <motion.a
-              key={social.label}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              suppressHydrationWarning
-              className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
-                social.label === 'Instagram' ? 'bg-pink-500 text-white' : 
-                social.label === 'TikTok' ? 'bg-black text-white' : 
-                'bg-blue-600 text-white'
-              }`}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              initial={{ y: 50, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 2.2 + index * 0.1, duration: 0.5 }}
+      {/* Mobile - Left Sidebar with Toggle */}
+      <div className="lg:hidden">
+        {/* Toggle Button */}
+        <motion.button
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className="fixed left-4 top-1/2 transform -translate-y-1/2 z-50 w-12 h-12 bg-[#0066ff] rounded-full shadow-lg flex items-center justify-center text-white"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          initial={{ x: -50, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 2, duration: 0.5 }}
+        >
+          <FaShareAlt className="text-xl" />
+        </motion.button>
+
+        {/* Social Links Sidebar */}
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div
+              className="fixed left-0 top-1/2 transform -translate-y-1/2 z-40"
+              initial={{ x: -200, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -200, opacity: 0 }}
+              transition={{ duration: 0.3 }}
             >
-              <span className="text-lg">{social.icon}</span>
-            </motion.a>
-          ))}
-        </div>
-      </motion.div>
+              <div className="bg-white/95 backdrop-blur-sm rounded-r-2xl shadow-xl p-4">
+                <div className="flex flex-col gap-3">
+                  {socialLinks.map((social, index) => (
+                    <motion.a
+                      key={social.label}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      suppressHydrationWarning
+                      className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
+                        social.label === 'Instagram' ? 'bg-pink-500 text-white' : 
+                        social.label === 'TikTok' ? 'bg-black text-white' : 
+                        'bg-blue-600 text-white'
+                      }`}
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      initial={{ x: -50, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ delay: 0.1 * index, duration: 0.3 }}
+                    >
+                      <span className="text-lg">{social.icon}</span>
+                    </motion.a>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* Backdrop */}
+        {isMobileMenuOpen && (
+          <div
+            className="fixed inset-0 z-30 lg:hidden"
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
+        )}
+      </div>
     </>
   )
 }
