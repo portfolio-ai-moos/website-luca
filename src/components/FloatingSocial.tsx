@@ -100,9 +100,9 @@ const FloatingSocial: React.FC = () => {
                       rel="noopener noreferrer"
                       suppressHydrationWarning
                       className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
-                        social.label === 'Instagram' ? 'bg-pink-500 text-white' : 
-                        social.label === 'TikTok' ? 'bg-black text-white' : 
-                        'bg-blue-600 text-white'
+                        social.label === 'Instagram' ? 'bg-pink-500 text-white hover:bg-pink-600' : 
+                        social.label === 'TikTok' ? 'bg-black text-white border-2 border-gray-300 hover:border-white' : 
+                        'bg-blue-600 text-white hover:bg-blue-700'
                       }`}
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
