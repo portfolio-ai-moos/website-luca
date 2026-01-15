@@ -46,18 +46,15 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.div
-            className="flex items-center space-x-3"
+            className="flex items-center"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             <img
               src="/images/logo.png"
               alt="Luscombe Lifestyle Logo"
-              className="w-12 h-12"
+              className="w-16 h-16 md:w-20 md:h-20"
             />
-            <span className="text-xl md:text-2xl font-bold text-white">
-              LUSCOMBE LIFESTYLE
-            </span>
           </motion.div>
 
           {/* Desktop Navigation */}
