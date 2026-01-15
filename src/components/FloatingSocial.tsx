@@ -70,7 +70,9 @@ const FloatingSocial: React.FC = () => {
         {/* Toggle Button */}
         <motion.button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="fixed left-4 top-1/2 transform -translate-y-1/2 z-50 w-12 h-12 bg-[#0066ff] rounded-full shadow-lg flex items-center justify-center text-white"
+          className={`fixed left-4 top-1/2 transform -translate-y-1/2 z-50 w-12 h-12 bg-[#0066ff] rounded-full shadow-lg flex items-center justify-center text-white transition-all duration-300 ${
+            isMobileMenuOpen ? 'left-48' : 'left-4'
+          }`}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           initial={{ x: -50, opacity: 0 }}
