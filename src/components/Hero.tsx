@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
   }
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#090c45] via-[#0a0e52] to-[#0d1159] overflow-hidden pt-20 sm:pt-24 md:pt-32 lg:pt-40">
+    <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#090c45] via-[#0a0e52] to-[#0d1159] overflow-hidden pt-24 sm:pt-28 md:pt-40 lg:pt-56 xl:pt-64">
       {/* Background Animation */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-72 h-72 bg-[#0066ff] rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
