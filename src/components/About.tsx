@@ -43,7 +43,7 @@ const About: React.FC = () => {
       id: 1,
       image: '/images/progression-images/Levi-transformation.jpg',
       title: 'Levi\'s Transformatie',
-      story: 'De coaching met Luca heb ik als erg professioneel ervaren, hij heeft kennis en passie voor wat hij doet en dit droeg hij ook over aan mij. Ik ben mede-dankzij Luca in me beste shape ooit gekomen.',
+      story: 'Toen ik begon met personal training wist ik eigenlijk niet goed wat ik deed in de sportschool. Ik deed maar wat en twijfelde vaak of het wel effect had. Door de begeleiding heb ik niet alleen zichtbaar resultaat behaald, maar ook écht leren trainen. Ik begrijp nu waarom ik bepaalde oefeningen doe, hoe mijn houding moet zijn en hoe ik mezelf kan blijven uitdagen. Mijn kracht en zelfvertrouwen zijn enorm gegroeid. Ik voel me fitter dan ooit en ga nu met plezier en zekerheid naar de training.',
       results: '• Spiergroei en krachttoename\n• Vetverlies en strakkere physique\n• Betere trainingsdiscipline\n• Duurzame levensstijlverandering'
     },
     {
@@ -57,22 +57,22 @@ const About: React.FC = () => {
       id: 3,
       image: '/images/progression-images/Parsa-transformation.jpg',
       title: 'Parsa\'s Transformatie',
-      story: 'De coaching met Luca heb ik als erg professioneel ervaren, hij heeft kennis en passie voor wat hij doet en dit droeg hij ook over aan mij. Ik ben mede-dankzij Luca in me beste shape ooit gekomen.',
-      results: '• Impressive body transformation\n• Spierdefinitie verbeterd\n• Kracht en uithouding verhoogd\n• Zelfvertrouwen gegroeid'
+      story: 'Ik train nu met een plan en met vertrouwen. Ik weet hoe ik mijn lichaam moet prikkelen, wanneer ik gas moet geven en wanneer ik moet herstellen. Geen twijfel meer, geen willekeur.\n\nDoor de online coaching heb ik consistentie opgebouwd en geleerd wat écht werkt voor mij. Ik voel me fitter, energieker en sterker dan ooit. Dit is geen tijdelijke fase, dit is een levensstijl geworden.',
+      results: '• Structuur en consistentie\n• Fysieke transformatie\n• Energieker en sterker\n• Duurzame levensstijl'
     },
     {
       id: 4,
       image: '/images/progression-images/Sadjad-transformation.jpg',
       title: 'Sadjad\'s Transformatie',
-      story: 'De coaching met Luca heb ik als erg professioneel ervaren, hij heeft kennis en passie voor wat hij doet en dit droeg hij ook over aan mij. Ik ben mede-dankzij Luca in me beste shape ooit gekomen.',
-      results: '• Doelen bereikt en overtroffen\n• Fysieke transformatie zichtbaar\n• Mentale kracht toegenomen\n• Gezonde levensstijl aangeleerd'
+      story: '1,5 jaar geleden begon ik aan een online coachingstraject zonder precies te weten waar het me zou brengen. Inmiddels ben ik 33 kilo afgevallen. Niet door extreme diëten of korte oplossingen, maar door een aanpak die vol te houden is.\n\nDankzij de online coaching heb ik structuur, kennis en discipline opgebouwd. Ik heb geleerd hoe ik mijn voeding kan aanpassen aan mijn leven en hoe ik training op de juiste manier inzet. Ook op momenten dat het lastig was, stond er altijd begeleiding klaar.\n\nDit traject heeft me niet alleen fysiek veranderd, maar ook mentaal sterker gemaakt. Wat ooit onmogelijk leek, voelt nu als mijn nieuwe normaal. En dit is pas het begin.',
+      results: '• 33 kilo afgevallen\n• Structuur en discipline\n• Kennis van voeding en training\n• Mentale kracht toegenomen'
     },
     {
       id: 5,
       image: '/images/progression-images/Jesper-transformation.jpeg',
       title: 'Jesper\'s Transformatie',
-      story: 'De coaching met Luca heb ik als erg professioneel ervaren, hij heeft kennis en passie voor wat hij doet en dit droeg hij ook over aan mij. Ik ben mede-dankzij Luca in me beste shape ooit gekomen.',
-      results: '• Complete transformatie\n• Spiermassa toegenomen\n• Vet verbrand\n• Duurzame resultaten behaald'
+      story: 'Luca is echt een fijne trainer om mee te werken. Wekelijkse check-ins en elke dag WhatsApp contact, waarin door middel van video\'s van mijzelf naar mijn vorm wordt gekeken. Echt een aanrader voor iedereen die serieus aan de slag wil met zijn doelen!',
+      results: '• Wekelijkse begeleiding\n• Dagelijkse support via WhatsApp\n• Video-analyse van training\n• Serieus resultaat behaald'
     }
   ]
 
