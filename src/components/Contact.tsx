@@ -29,10 +29,28 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would normally send the form data to a server
-    console.log('Form submitted:', formData)
-    setIsSubmitted(true)
-    setTimeout(() => setIsSubmitted(false), 5000)
+    
+    // Debug: log form data
+    console.log('Form data:', formData)
+    
+    const subject = encodeURIComponent('Contact from Luscombe Lifestyle')
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Phone: ${formData.phone}\n\n` +
+      `Message:\n${formData.message}`
+    )
+    
+    const mailtoUrl = `mailto:luscombe.training@gmail.com?subject=${subject}&body=${body}`
+    console.log('Mailto URL:', mailtoUrl)
+    
+    // Try multiple methods to open mailto
+    window.location.href = mailtoUrl
+    
+    // Fallback method
+    setTimeout(() => {
+      window.open(mailtoUrl, '_blank')
+    }, 100)
   }
 
   const shareUrl = typeof window !== 'undefined' ? window.location.href : ''
@@ -87,7 +105,7 @@ const Contact: React.FC = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#0066ff] transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#0066ff] transition-colors text-gray-900"
                   placeholder={t('namePlaceholder', 'Jouw naam')}
                 />
               </div>
@@ -102,7 +120,7 @@ const Contact: React.FC = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#0066ff] transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#0066ff] transition-colors text-gray-900"
                   placeholder={t('emailPlaceholder', 'jouw@email.com')}
                 />
               </div>
@@ -116,7 +134,7 @@ const Contact: React.FC = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#0066ff] transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#0066ff] transition-colors text-gray-900"
                   placeholder={t('phonePlaceholder', '+31 6 12345678')}
                 />
               </div>
@@ -131,7 +149,7 @@ const Contact: React.FC = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#0066ff] transition-colors resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#0066ff] transition-colors resize-none text-gray-900"
                   placeholder={t('messagePlaceholder', 'Vertel me over je doelen...')}
                 ></textarea>
               </div>
@@ -142,14 +160,7 @@ const Contact: React.FC = () => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                {isSubmitted ? (
-                  <span className="flex items-center justify-center">
-                    <FaCheck className="mr-2" />
-                    {t('sent', 'Verstuurd!')}
-                  </span>
-                ) : (
-                  t('send')
-                )}
+                {t('send')}
               </motion.button>
             </form>
           </motion.div>
