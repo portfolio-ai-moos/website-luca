@@ -101,16 +101,13 @@ const About: React.FC = () => {
             className="space-y-4 text-lg leading-relaxed text-gray-700 max-w-3xl"
           >
             <p>
-              Ik ben Luca, 24 jaar, online fitness & lifestyle coach met een sterke focus op krachttraining en duurzame progressie.
+              Ik ben Luca (24), online fitness & lifestyle coach met focus op krachttraining en duurzame progressie.
             </p>
             <p>
-              Ik train al meer dan 10 jaar in de sportschool en ben de afgelopen 2,5 jaar intensief bezig met bodybuilding en het optimaliseren van prestaties.
+              Met ruim 10 jaar trainingservaring en een achtergrond in bodybuilding help ik mensen slimmer trainen en beter herstellen.
             </p>
             <p>
-              Naast mijn online coaching ben ik student fysiotherapie en werk ik als personal trainer en sportmasseur. In mijn werk begeleid ik mensen dagelijks bij het verbeteren van techniek, kracht en belastbaarheid.
-            </p>
-            <p>
-              Daarnaast loop ik stage binnen de fysiotherapieomgeving van de Feyenoord Academy, waar ik sporters ondersteun rondom prestatie, herstel en het verantwoord opbouwen van belastbaarheid.
+              Daarnaast studeer ik fysiotherapie, werk ik als personal trainer en loop ik stage bij de Feyenoord Academy.
             </p>
             <p className="italic text-[#090c45]">
               "Alles wat ik doe komt samen in mijn coaching: een combinatie van praktijkervaring, kennis van het menselijk lichaam en persoonlijke begeleiding, zodat jij slimmer traint, beter herstelt en duurzaam resultaat behaalt."
