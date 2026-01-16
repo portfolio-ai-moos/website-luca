@@ -206,55 +206,62 @@ const About: React.FC = () => {
                 onClick={(e) => e.stopPropagation()}
               >
                 {transformations.find(t => t.id === selectedTransformation) && (
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div className="relative h-[600px] rounded-l-2xl overflow-hidden">
-                      <Image
-                        src={transformations.find(t => t.id === selectedTransformation)!.image}
-                        alt={transformations.find(t => t.id === selectedTransformation)!.title}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                      />
-                    </div>
-                    <div className="p-8">
-                      <div className="flex justify-between items-start mb-6">
-                        <h3 className="text-3xl font-bold text-[#090c45]">
-                          {transformations.find(t => t.id === selectedTransformation)!.title}
-                        </h3>
-                        <button
-                          onClick={() => setSelectedTransformation(null)}
-                          className="text-gray-400 hover:text-gray-600 transition-colors"
-                        >
-                          <FaTimes size={24} />
-                        </button>
+                  <>
+                    {/* Mobile Layout: Text first, then image */}
+                    <div className="md:hidden">
+                      <div className="p-6">
+                        <div className="flex justify-between items-start mb-4">
+                          <h3 className="text-2xl font-bold text-[#090c45]">
+                            {transformations.find(t => t.id === selectedTransformation)!.title}
+                          </h3>
+                          <button
+                            onClick={() => setSelectedTransformation(null)}
+                            className="text-gray-400 hover:text-gray-600 transition-colors"
+                          >
+                            <FaTimes size={20} />
+                          </button>
+                        </div>
+                        
+                        <div className="space-y-4">
+                          <div>
+                            <h4 className="text-lg font-semibold text-[#090c45] mb-2 flex items-center gap-2">
+                              <FaQuoteLeft className="text-[#0066ff]" />
+                              Het Verhaal
+                            </h4>
+                            <p className="text-gray-700 leading-relaxed text-sm">
+                              {transformations.find(t => t.id === selectedTransformation)!.story}
+                            </p>
+                          </div>
+                          
+                          <div>
+                            <h4 className="text-lg font-semibold text-[#090c45] mb-2">
+                              Behaalde Resultaten
+                            </h4>
+                            <p className="text-gray-700 whitespace-pre-line font-medium text-sm">
+                              {transformations.find(t => t.id === selectedTransformation)!.results}
+                            </p>
+                          </div>
+                        </div>
                       </div>
                       
-                      <div className="space-y-6">
-                        <div>
-                          <h4 className="text-xl font-semibold text-[#090c45] mb-3 flex items-center gap-2">
-                            <FaQuoteLeft className="text-[#0066ff]" />
-                            Het Verhaal
-                          </h4>
-                          <p className="text-gray-700 leading-relaxed">
-                            {transformations.find(t => t.id === selectedTransformation)!.story}
-                          </p>
-                        </div>
-                        
-                        <div>
-                          <h4 className="text-xl font-semibold text-[#090c45] mb-3">
-                            Behaalde Resultaten
-                          </h4>
-                          <p className="text-gray-700 whitespace-pre-line font-medium">
-                            {transformations.find(t => t.id === selectedTransformation)!.results}
-                          </p>
-                        </div>
-                        
+                      {/* Mobile Image */}
+                      <div className="relative h-64 w-full">
+                        <Image
+                          src={transformations.find(t => t.id === selectedTransformation)!.image}
+                          alt={transformations.find(t => t.id === selectedTransformation)!.title}
+                          fill
+                          className="object-contain bg-gray-100"
+                          sizes="100vw"
+                        />
+                      </div>
+                      
+                      <div className="p-6 pt-0">
                         <motion.button
                           onClick={() => {
                             setSelectedTransformation(null)
                             document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
                           }}
-                          className="w-full px-8 py-4 bg-[#0066ff] text-white font-semibold rounded-lg hover:bg-[#0052cc] transition-all duration-300 transform hover:scale-105 shadow-lg"
+                          className="w-full px-6 py-3 bg-[#0066ff] text-white font-semibold rounded-lg hover:bg-[#0052cc] transition-all duration-300 transform hover:scale-105 shadow-lg text-sm"
                           whileHover={{ scale: 1.02 }}
                           whileTap={{ scale: 0.98 }}
                         >
@@ -262,7 +269,67 @@ const About: React.FC = () => {
                         </motion.button>
                       </div>
                     </div>
-                  </div>
+
+                    {/* Desktop Layout: Side by side */}
+                    <div className="hidden md:grid md:grid-cols-2 gap-8">
+                      <div className="relative min-h-[500px] max-h-[700px] rounded-l-2xl overflow-hidden bg-gray-100">
+                        <Image
+                          src={transformations.find(t => t.id === selectedTransformation)!.image}
+                          alt={transformations.find(t => t.id === selectedTransformation)!.title}
+                          fill
+                          className="object-contain p-4"
+                          sizes="50vw"
+                          priority
+                        />
+                      </div>
+                      <div className="p-8">
+                        <div className="flex justify-between items-start mb-6">
+                          <h3 className="text-3xl font-bold text-[#090c45]">
+                            {transformations.find(t => t.id === selectedTransformation)!.title}
+                          </h3>
+                          <button
+                            onClick={() => setSelectedTransformation(null)}
+                            className="text-gray-400 hover:text-gray-600 transition-colors"
+                          >
+                            <FaTimes size={24} />
+                          </button>
+                        </div>
+                        
+                        <div className="space-y-6">
+                          <div>
+                            <h4 className="text-xl font-semibold text-[#090c45] mb-3 flex items-center gap-2">
+                              <FaQuoteLeft className="text-[#0066ff]" />
+                              Het Verhaal
+                            </h4>
+                            <p className="text-gray-700 leading-relaxed">
+                              {transformations.find(t => t.id === selectedTransformation)!.story}
+                            </p>
+                          </div>
+                          
+                          <div>
+                            <h4 className="text-xl font-semibold text-[#090c45] mb-3">
+                              Behaalde Resultaten
+                            </h4>
+                            <p className="text-gray-700 whitespace-pre-line font-medium">
+                              {transformations.find(t => t.id === selectedTransformation)!.results}
+                            </p>
+                          </div>
+                          
+                          <motion.button
+                            onClick={() => {
+                              setSelectedTransformation(null)
+                              document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
+                            }}
+                            className="w-full px-8 py-4 bg-[#0066ff] text-white font-semibold rounded-lg hover:bg-[#0052cc] transition-all duration-300 transform hover:scale-105 shadow-lg"
+                            whileHover={{ scale: 1.02 }}
+                            whileTap={{ scale: 0.98 }}
+                          >
+                            Start Jouw Transformatie
+                          </motion.button>
+                        </div>
+                      </div>
+                    </div>
+                  </>
                 )}
               </motion.div>
             </motion.div>
