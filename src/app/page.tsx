@@ -1,5 +1,6 @@
 'use client'
 
+import { Analytics } from '@vercel/analytics/react'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
@@ -13,6 +14,7 @@ import FloatingSocial from '@/components/FloatingSocial'
 export default function Home() {
   return (
     <div className="min-h-screen bg-white font-montserrat">
+      <Analytics />
       <FloatingSocial />
       <Header />
       <main>
