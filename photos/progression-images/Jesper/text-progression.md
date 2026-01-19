@@ -1,0 +1,1 @@
+Luca is echt een fijne trainer om mee te werken. Wekelijkse check-ins en elke dag WhatsApp contact, waarin door middel van video's van mijzelf naar mijn vorm wordt gekeken. Echt een aanrader voor iedereen die serieus aan de slag wil met zijn doelen!

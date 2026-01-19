@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Mailto</title>
+</head>
+<body>
+    <h1>Test Mailto Function</h1>
+    <button onclick="testMailto()">Test Mailto</button>
+    
+    <script>
+        function testMailto() {
+            const subject = encodeURIComponent('Test from Luscombe Lifestyle');
+            const body = encodeURIComponent(
+                `Name: Test User\n` +
+                `Email: test@example.com\n` +
+                `Phone: +31 6 12345678\n\n` +
+                `Message:\nThis is a test message`
+            );
+            
+            const mailtoUrl = `mailto:luscombe.training@gmail.com?subject=${subject}&body=${body}`;
+            console.log('Mailto URL:', mailtoUrl);
+            
+            // Try direct window.location
+            window.location.href = mailtoUrl;
+        }
+    </script>
+</body>
+</html>

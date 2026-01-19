@@ -1,0 +1,1 @@
+De coaching met Luca heb ik als erg professioneel ervaren, hij heeft kennis en passie voor wat hij doet en dit droeg hij ook over aan mij. Ik ben mede-dankzij Luca in me beste shape ooit gekomen.
