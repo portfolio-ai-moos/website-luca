@@ -72,7 +72,7 @@ const About: React.FC = () => {
       image: '/images/progression-images/Jesper-transformation.jpeg',
       title: 'Jesper\'s Transformatie',
       story: 'Luca is echt een fijne trainer om mee te werken. Wekelijkse check-ins en elke dag WhatsApp contact, waarin door middel van video\'s van mijzelf naar mijn vorm wordt gekeken. Echt een aanrader voor iedereen die serieus aan de slag wil met zijn doelen!',
-      results: '• Wekelijkse begeleiding\n• Dagelijkse support via WhatsApp\n• Video-analyse van training\n• Serieus resultaat behaald'
+      results: '• meer dan 10 kilo vetmassa verloren\n• aanzienlijk meer spiermassa gecreëerd\n• echt leren trainen\n• discipline op meerdere vlakken in zijn leven'
     }
   ]
 
