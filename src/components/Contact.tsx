@@ -94,12 +94,12 @@ const Contact: React.FC = () => {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form suppressHydrationWarning onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-gray-700 font-semibold mb-2">
                   {t('name')} *
                 </label>
-                <input
+                <input suppressHydrationWarning
                   type="text"
                   name="name"
                   value={formData.name}
@@ -114,7 +114,7 @@ const Contact: React.FC = () => {
                 <label className="block text-gray-700 font-semibold mb-2">
                   {t('email')} *
                 </label>
-                <input
+                <input suppressHydrationWarning
                   type="email"
                   name="email"
                   value={formData.email}
@@ -129,7 +129,7 @@ const Contact: React.FC = () => {
                 <label className="block text-gray-700 font-semibold mb-2">
                   {t('phone')}
                 </label>
-                <input
+                <input suppressHydrationWarning
                   type="tel"
                   name="phone"
                   value={formData.phone}
@@ -143,7 +143,7 @@ const Contact: React.FC = () => {
                 <label className="block text-gray-700 font-semibold mb-2">
                   {t('message')} *
                 </label>
-                <textarea
+                <textarea suppressHydrationWarning
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
@@ -154,7 +154,7 @@ const Contact: React.FC = () => {
                 ></textarea>
               </div>
 
-              <motion.button
+              <motion.button suppressHydrationWarning
                 type="submit"
                 className="w-full px-8 py-4 bg-[#0066ff] text-white font-semibold rounded-lg hover:bg-[#0052cc] transition-all duration-300 transform hover:scale-105 shadow-lg"
                 whileHover={{ scale: 1.02 }}
@@ -178,7 +178,7 @@ const Contact: React.FC = () => {
               </h3>
               
               <div className="space-y-4">
-                <a
+                <a suppressHydrationWarning
                   href="tel:+31614629217"
                   className="flex items-center text-gray-700 hover:text-[#0066ff] transition-colors"
                 >
@@ -186,7 +186,7 @@ const Contact: React.FC = () => {
                   <span>+31 6 146 292 17</span>
                 </a>
                 
-                <a
+                <a suppressHydrationWarning
                   href="mailto:luscombe.training@gmail.com"
                   className="flex items-center text-gray-700 hover:text-[#0066ff] transition-colors"
                 >
@@ -208,7 +208,7 @@ const Contact: React.FC = () => {
               </h3>
               
               <div className="grid grid-cols-2 gap-4">
-                <motion.button
+                <motion.button suppressHydrationWarning
                   onClick={() => handleShare('facebook')}
                   className="flex items-center justify-center px-4 py-3 bg-[#1877f2] text-white rounded-lg hover:bg-[#166fe5] transition-colors"
                   whileHover={{ scale: 1.05 }}
@@ -218,7 +218,7 @@ const Contact: React.FC = () => {
                   Facebook
                 </motion.button>
                 
-                <motion.button
+                <motion.button suppressHydrationWarning
                   onClick={() => handleShare('linkedin')}
                   className="flex items-center justify-center px-4 py-3 bg-[#0077b5] text-white rounded-lg hover:bg-[#00669d] transition-colors"
                   whileHover={{ scale: 1.05 }}
@@ -228,7 +228,7 @@ const Contact: React.FC = () => {
                   LinkedIn
                 </motion.button>
                 
-                <motion.button
+                <motion.button suppressHydrationWarning
                   onClick={() => handleShare('twitter')}
                   className="flex items-center justify-center px-4 py-3 bg-[#1da1f2] text-white rounded-lg hover:bg-[#1a91da] transition-colors"
                   whileHover={{ scale: 1.05 }}
@@ -238,7 +238,7 @@ const Contact: React.FC = () => {
                   Twitter
                 </motion.button>
                 
-                <motion.button
+                <motion.button suppressHydrationWarning
                   onClick={() => handleShare('whatsapp')}
                   className="flex items-center justify-center px-4 py-3 bg-[#25d366] text-white rounded-lg hover:bg-[#22c65f] transition-colors"
                   whileHover={{ scale: 1.05 }}

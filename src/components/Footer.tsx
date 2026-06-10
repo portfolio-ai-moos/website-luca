@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
-                <a
+                <a suppressHydrationWarning
                   key={index}
                   href={social.href}
                   target="_blank"
@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.key}>
-                  <button
+                  <button suppressHydrationWarning
                     onClick={() => handleNavClick(link.href)}
                     className="text-white/60 hover:text-[#0066ff] transition-colors duration-300"
                   >
@@ -94,13 +94,13 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-center text-white/60">
                 <FaPhone className="mr-3 text-[#0066ff]" />
-                <a href="tel:+31614629217" className="hover:text-white transition-colors">
+                <a suppressHydrationWarning href="tel:+31614629217" className="hover:text-white transition-colors">
                   +31 6 146 292 17
                 </a>
               </li>
               <li className="flex items-center text-white/60">
                 <FaEnvelope className="mr-3 text-[#0066ff]" />
-                <a href="mailto:luscombe.training@gmail.com" className="hover:text-white transition-colors">
+                <a suppressHydrationWarning href="mailto:luscombe.training@gmail.com" className="hover:text-white transition-colors">
                   luscombe.training@gmail.com
                 </a>
               </li>
@@ -122,13 +122,13 @@ const Footer: React.FC = () => {
             <p className="text-white/60 mb-4">
               {t('newsletterDesc', 'Blijf op de hoogte van tips en updates')}
             </p>
-            <form className="flex">
-              <input
+            <form suppressHydrationWarning className="flex">
+              <input suppressHydrationWarning
                 type="email"
                 placeholder={t('emailPlaceholder', 'Jouw e-mail')}
                 className="flex-1 px-4 py-2 bg-white/10 border border-white/20 rounded-l-lg focus:outline-none focus:border-[#0066ff] text-white placeholder-white/60"
               />
-              <button
+              <button suppressHydrationWarning
                 type="submit"
                 className="px-4 py-2 bg-[#0066ff] text-white rounded-r-lg hover:bg-[#0052cc] transition-colors"
               >
@@ -145,10 +145,10 @@ const Footer: React.FC = () => {
               © {currentYear} Luscombe Lifestyle. {t('rights')}
             </p>
             <div className="flex space-x-6 text-sm">
-              <a href="/privacyverklaring" className="text-white/60 hover:text-[#0066ff] transition-colors">
+              <a suppressHydrationWarning href="/privacyverklaring" className="text-white/60 hover:text-[#0066ff] transition-colors">
                 {t('privacy')}
               </a>
-              <a href="/algemene-voorwaarden" className="text-white/60 hover:text-[#0066ff] transition-colors">
+              <a suppressHydrationWarning href="/algemene-voorwaarden" className="text-white/60 hover:text-[#0066ff] transition-colors">
                 {t('terms')}
               </a>
             </div>
@@ -159,7 +159,7 @@ const Footer: React.FC = () => {
             </div>
             <div>
               Made by{' '}
-              <a 
+              <a suppressHydrationWarning 
                 href="https://www.simplifywithai.nl" 
                 target="_blank" 
                 rel="noopener noreferrer"

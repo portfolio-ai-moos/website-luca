@@ -60,7 +60,7 @@ const Header: React.FC = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <button
+              <button suppressHydrationWarning
                 key={item.key}
                 onClick={() => handleNavClick(item.href)}
                 className="text-white hover:text-[#0066ff] transition-colors duration-200 font-medium"
@@ -71,7 +71,7 @@ const Header: React.FC = () => {
             
             {/* Language Switcher */}
             <div className="relative">
-              <button
+              <button suppressHydrationWarning
                 onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
                 className="flex items-center space-x-2 text-white hover:text-[#0066ff] transition-colors duration-200"
               >
@@ -87,7 +87,7 @@ const Header: React.FC = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                 >
-                  <button
+                  <button suppressHydrationWarning
                     onClick={() => {
                       setLanguage('nl')
                       setIsLangDropdownOpen(false)
@@ -96,7 +96,7 @@ const Header: React.FC = () => {
                   >
                     NL
                   </button>
-                  <button
+                  <button suppressHydrationWarning
                     onClick={() => {
                       setLanguage('en')
                       setIsLangDropdownOpen(false)
@@ -111,7 +111,7 @@ const Header: React.FC = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
+          <button suppressHydrationWarning
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden text-white"
           >
@@ -128,7 +128,7 @@ const Header: React.FC = () => {
             transition={{ duration: 0.3 }}
           >
             {navItems.map((item) => (
-              <button
+              <button suppressHydrationWarning
                 key={item.key}
                 onClick={() => handleNavClick(item.href)}
                 className="block w-full text-left py-2 text-white hover:text-[#0066ff] transition-colors duration-200 font-medium"
@@ -139,13 +139,13 @@ const Header: React.FC = () => {
             
             {/* Mobile Language Switcher */}
             <div className="flex space-x-4 mt-4 pt-4 border-t border-white/20">
-              <button
+              <button suppressHydrationWarning
                 onClick={() => setLanguage('nl')}
                 className={`px-3 py-1 rounded ${language === 'nl' ? 'bg-[#0066ff] text-white' : 'text-white'}`}
               >
                 NL
               </button>
-              <button
+              <button suppressHydrationWarning
                 onClick={() => setLanguage('en')}
                 className={`px-3 py-1 rounded ${language === 'en' ? 'bg-[#0066ff] text-white' : 'text-white'}`}
               >

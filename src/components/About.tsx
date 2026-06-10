@@ -55,9 +55,9 @@ const About: React.FC = () => {
     },
     {
       id: 3,
-      image: '/images/progression-images/Parsa-transformation.jpg',
+      image: '/images/progression-images/Parsa-2-transformatie.jpeg',
       title: 'Parsa\'s Transformatie',
-      story: 'Ik train nu met een plan en met vertrouwen. Ik weet hoe ik mijn lichaam moet prikkelen, wanneer ik gas moet geven en wanneer ik moet herstellen. Geen twijfel meer, geen willekeur.\n\nDoor de online coaching heb ik consistentie opgebouwd en geleerd wat écht werkt voor mij. Ik voel me fitter, energieker en sterker dan ooit. Dit is geen tijdelijke fase, dit is een levensstijl geworden.',
+      story: 'Ik train nu met een plan en met vertrouwen. Ik weet hoe ik mijn lichaam moet prikkelen, wanneer ik gas moet geven en wanneer ik moet herstellen. Geen twijfel meer, geen willekeur. Door de online coaching heb ik consistentie opgebouwd en geleerd wat écht werkt voor mij.\n\nNaast mijn fysieke progressie heeft het me ook enorm geholpen om mijn drukke universitaire leven beter te combineren met mijn fitnessdoelen. Ondanks een volle studieplanning weet ik nu hoe ik efficiënt kan trainen, herstellen en mijn voeding op orde kan houden zonder dat het ten koste gaat van mijn studie of sociale leven.\n\nIk voel me fitter, energieker en sterker dan ooit. Dit is geen tijdelijke fase, dit is een levensstijl geworden.',
       results: '• Structuur en consistentie\n• Fysieke transformatie\n• Energieker en sterker\n• Duurzame levensstijl'
     },
     {
@@ -73,6 +73,13 @@ const About: React.FC = () => {
       title: 'Jesper\'s Transformatie',
       story: 'Luca is echt een fijne trainer om mee te werken. Wekelijkse check-ins en elke dag WhatsApp contact, waarin door middel van video\'s van mijzelf naar mijn vorm wordt gekeken. Echt een aanrader voor iedereen die serieus aan de slag wil met zijn doelen!',
       results: '• meer dan 10 kilo vetmassa verloren\n• aanzienlijk meer spiermassa gecreëerd\n• echt leren trainen\n• discipline op meerdere vlakken in zijn leven'
+    },
+    {
+      id: 6,
+      image: '/images/progression-images/Wilson.jpeg',
+      title: 'Wilson\'s Transformatie',
+      story: 'Ik heb je coaching als erg fijn ervaren. Het helpt je om gedisciplineerd te blijven en je ziet wekelijks resultaat van de inzet die je levert.\n\nOok vind ik het contact prettig: als je ergens tegenaan loopt, kun je altijd bij je terecht en kom je met een passende oplossing.\n\nDe schema’s zijn overzichtelijk, goed opgebouwd en makkelijk in te vullen.\n\n- Wilson van Vliet',
+      results: '• Verbeterde discipline\n• Wekelijks fysiek resultaat\n• Overzichtelijke en werkende schema\'s\n• Altijd een passende oplossing'
     }
   ]
 
@@ -152,7 +159,7 @@ const About: React.FC = () => {
           <h3 className="text-3xl font-bold text-[#090c45] mb-8 text-center">
             Transformaties
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
             {transformations.map((transformation, index) => (
               <motion.div
                 key={transformation.id}
@@ -214,7 +221,7 @@ const About: React.FC = () => {
                           <h3 className="text-2xl font-bold text-[#090c45]">
                             {transformations.find(t => t.id === selectedTransformation)!.title}
                           </h3>
-                          <button
+                          <button suppressHydrationWarning
                             onClick={() => setSelectedTransformation(null)}
                             className="text-gray-400 hover:text-gray-600 transition-colors"
                           >
@@ -256,7 +263,7 @@ const About: React.FC = () => {
                       </div>
                       
                       <div className="p-6 pt-0">
-                        <motion.button
+                        <motion.button suppressHydrationWarning
                           onClick={() => {
                             setSelectedTransformation(null)
                             document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
@@ -287,7 +294,7 @@ const About: React.FC = () => {
                           <h3 className="text-3xl font-bold text-[#090c45]">
                             {transformations.find(t => t.id === selectedTransformation)!.title}
                           </h3>
-                          <button
+                          <button suppressHydrationWarning
                             onClick={() => setSelectedTransformation(null)}
                             className="text-gray-400 hover:text-gray-600 transition-colors"
                           >
@@ -315,7 +322,7 @@ const About: React.FC = () => {
                             </p>
                           </div>
                           
-                          <motion.button
+                          <motion.button suppressHydrationWarning
                             onClick={() => {
                               setSelectedTransformation(null)
                               document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })

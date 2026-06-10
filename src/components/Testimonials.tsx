@@ -120,13 +120,13 @@ const Testimonials: React.FC = () => {
           </motion.div>
 
           {/* Navigation Buttons */}
-          <button
+          <button suppressHydrationWarning
             onClick={goToPrevious}
             className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-12 md:-translate-x-16 bg-white text-[#090c45] w-12 h-12 rounded-full shadow-lg flex items-center justify-center hover:bg-[#0066ff] hover:text-white transition-all duration-300"
           >
             <FaChevronLeft />
           </button>
-          <button
+          <button suppressHydrationWarning
             onClick={goToNext}
             className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-12 md:translate-x-16 bg-white text-[#090c45] w-12 h-12 rounded-full shadow-lg flex items-center justify-center hover:bg-[#0066ff] hover:text-white transition-all duration-300"
           >
@@ -136,7 +136,7 @@ const Testimonials: React.FC = () => {
           {/* Dots Indicator */}
           <div className="flex justify-center mt-8 space-x-2">
             {testimonials.map((_, index) => (
-              <button
+              <button suppressHydrationWarning
                 key={index}
                 onClick={() => goToSlide(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${

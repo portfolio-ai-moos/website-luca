@@ -13,7 +13,7 @@ import FloatingSocial from '@/components/FloatingSocial'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white font-montserrat">
+    <div className="min-h-screen bg-white font-montserrat" suppressHydrationWarning>
       <Analytics />
       <FloatingSocial />
       <Header />

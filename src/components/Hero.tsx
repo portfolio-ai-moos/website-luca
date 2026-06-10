@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.8 }}
             >
-              <motion.button
+              <motion.button suppressHydrationWarning
                 onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
                 className="px-8 py-4 bg-[#0066ff] text-white font-semibold rounded-lg hover:bg-[#0052cc] transition-all duration-300 transform hover:scale-105 shadow-lg"
                 whileHover={{ scale: 1.05 }}
@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
               transition={{ delay: 1, duration: 0.8 }}
             >
               <span className="text-white/80">{t('followMe', 'Volg mij')}:</span>
-              <motion.a
+              <motion.a suppressHydrationWarning
                 href="https://instagram.com/luca.luscombe"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -91,7 +91,7 @@ const Hero: React.FC = () => {
               >
                 <FaInstagram size={28} />
               </motion.a>
-              <motion.a
+              <motion.a suppressHydrationWarning
                 href="https://tiktok.com/@luca.luscombe"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -101,7 +101,7 @@ const Hero: React.FC = () => {
               >
                 <FaTiktok size={24} />
               </motion.a>
-              <motion.a
+              <motion.a suppressHydrationWarning
                 href="https://www.linkedin.com/in/luca-luscombe-83a6ab233"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -136,7 +136,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <motion.button
+      <motion.button suppressHydrationWarning
         onClick={scrollToNext}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 hover:text-white transition-colors duration-300"
         animate={{ y: [0, 10, 0] }}

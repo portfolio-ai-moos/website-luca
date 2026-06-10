@@ -94,7 +94,7 @@ const Services: React.FC = () => {
           className="flex justify-center mb-12"
         >
           <div className="bg-white rounded-lg shadow-md p-1 flex">
-            <button
+            <button suppressHydrationWarning
               onClick={() => setActiveService('coaching')}
               className={`px-8 py-3 rounded-md font-semibold transition-all duration-300 ${
                 activeService === 'coaching'
@@ -104,7 +104,7 @@ const Services: React.FC = () => {
             >
               {t('onlineCoaching')}
             </button>
-            <button
+            <button suppressHydrationWarning
               onClick={() => setActiveService('training')}
               className={`px-8 py-3 rounded-md font-semibold transition-all duration-300 ${
                 activeService === 'training'
@@ -137,7 +137,7 @@ const Services: React.FC = () => {
                 : t('trainingDesc', 'Bij Luscombe Lifestyle staat Personal Training voor doelgericht trainen met een duidelijke lijn. Ik help je bouwen aan een sterker, fitter lichaam dat past bij jouw niveau, doelen en dagelijkse ritme.')
               }
             </p>
-            <motion.button
+            <motion.button suppressHydrationWarning
               onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="px-8 py-4 bg-[#0066ff] text-white font-semibold rounded-lg hover:bg-[#0052cc] transition-all duration-300 transform hover:scale-105 shadow-lg"
               whileHover={{ scale: 1.05 }}

@@ -93,7 +93,7 @@ const SocialMediaFeed: React.FC = () => {
           className="flex justify-center mb-12"
         >
           <div className="bg-white rounded-lg shadow-md p-1 flex">
-            <button
+            <button suppressHydrationWarning
               onClick={() => setActiveTab('instagram')}
               className={`px-8 py-3 rounded-md font-semibold transition-all duration-300 flex items-center gap-2 ${
                 activeTab === 'instagram'
@@ -104,7 +104,7 @@ const SocialMediaFeed: React.FC = () => {
               <FaInstagram className="text-xl" />
               Instagram
             </button>
-            <button
+            <button suppressHydrationWarning
               onClick={() => setActiveTab('tiktok')}
               className={`px-8 py-3 rounded-md font-semibold transition-all duration-300 flex items-center gap-2 ${
                 activeTab === 'tiktok'
@@ -213,7 +213,7 @@ const SocialMediaFeed: React.FC = () => {
               {t('followPromise', 'Krijg elke dag gratis tips, workouts en motivatie')}
             </p>
             <div className="flex justify-center gap-4">
-              <motion.a
+              <motion.a suppressHydrationWarning
                 href="https://instagram.com/luca.luscombe"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -224,7 +224,7 @@ const SocialMediaFeed: React.FC = () => {
                 <FaInstagram />
                 @luca.luscombe
               </motion.a>
-              <motion.a
+              <motion.a suppressHydrationWarning
                 href="https://tiktok.com/@luca.luscombe"
                 target="_blank"
                 rel="noopener noreferrer"
