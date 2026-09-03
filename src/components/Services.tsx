@@ -133,8 +133,8 @@ const Services: React.FC = () => {
             </p>
             <p className="text-gray-700 mb-8">
               {activeService === 'coaching' 
-                ? t('coachingDesc', 'Bij Luscombe Lifestyle Coaching geloof ik in een persoonlijke benadering. Ik bied je tools en inzichten die je helpen jouw potentieel te realiseren en een duurzame, positieve verandering te creëren.')
-                : t('trainingDesc', 'Bij Luscombe Lifestyle staat Personal Training voor doelgericht trainen met een duidelijke lijn. Ik help je bouwen aan een sterker, fitter lichaam dat past bij jouw niveau, doelen en dagelijkse ritme.')
+                ? t('coachingDesc', 'Bij Luscombe Coaching geloof ik in een persoonlijke benadering. Ik bied je tools en inzichten die je helpen jouw potentieel te realiseren en een duurzame, positieve verandering te creëren.')
+                : t('trainingDesc', 'Bij Luscombe Coaching staat Personal Training voor doelgericht trainen met een duidelijke lijn. Ik help je bouwen aan een sterker, fitter lichaam dat past bij jouw niveau, doelen en dagelijkse ritme.')
               }
             </p>
             <motion.button suppressHydrationWarning

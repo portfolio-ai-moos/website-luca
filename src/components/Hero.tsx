@@ -124,7 +124,7 @@ const Hero: React.FC = () => {
             <div className="relative w-full h-[600px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/images/luca-profile-picture/PHOTO-2026-01-14-15-44-01.jpg"
-                alt="Luca - Luscombe Lifestyle"
+                alt="Luca - Luscombe Coaching"
                 fill
                 className="object-cover"
                 priority

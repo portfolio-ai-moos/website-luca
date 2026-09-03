@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold mb-4">LUSCOMBE LIFESTYLE</h3>
+            <h3 className="text-2xl font-bold mb-4">LUSCOMBE COACHING</h3>
             <p className="text-white/80 mb-4">
               {t('footerDesc', 'Transformeer je lichaam én je leven met professionele coaching en personal training.')}
             </p>
@@ -142,7 +142,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center mb-4">
             <p className="text-white/60 text-sm mb-4 md:mb-0">
-              © {currentYear} Luscombe Lifestyle. {t('rights')}
+              © {currentYear} Luscombe Coaching. {t('rights')}
             </p>
             <div className="flex space-x-6 text-sm">
               <a suppressHydrationWarning href="/privacyverklaring" className="text-white/60 hover:text-[#0066ff] transition-colors">

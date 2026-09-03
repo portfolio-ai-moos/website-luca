@@ -27,7 +27,7 @@ const AlgemeneVoorwaarden = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-[#090c45] mb-4">
             Algemene Voorwaarden
           </h1>
-          <h2 className="text-xl text-gray-600 mb-6">Luscombe Lifestyle</h2>
+          <h2 className="text-xl text-gray-600 mb-6">Luscombe Coaching</h2>
           <div className="w-24 h-1 bg-[#0066ff] mb-8"></div>
 
           {/* Terms Content */}
@@ -38,16 +38,16 @@ const AlgemeneVoorwaarden = () => {
                 In deze algemene voorwaarden wordt verstaan onder:
               </p>
               <ul className="list-disc pl-6 text-gray-700 mb-6">
-                <li><strong>Luscombe Lifestyle:</strong> De onderneming Luca Luscombe, handelend onder de naam Luscombe Lifestyle, ingeschreven in het Handelsregister onder KVK-nummer 97370509</li>
-                <li><strong>Client:</strong> De natuurlijke persoon of rechtspersoon die gebruikmaakt van de diensten van Luscombe Lifestyle</li>
-                <li><strong>Overeenkomst:</strong> De overeenkomst tussen Luscombe Lifestyle en de client voor het leveren van coaching diensten</li>
-                <li><strong>Diensten:</strong> Alle door Luscombe Lifestyle aangeboden coaching, training, personal training en adviezen</li>
-                <li><strong>Website:</strong> De internetomgeving van Luscombe Lifestyle</li>
+                <li><strong>Luscombe Coaching:</strong> De onderneming Luca Luscombe, handelend onder de naam Luscombe Coaching, ingeschreven in het Handelsregister onder KVK-nummer 97370509</li>
+                <li><strong>Client:</strong> De natuurlijke persoon of rechtspersoon die gebruikmaakt van de diensten van Luscombe Coaching</li>
+                <li><strong>Overeenkomst:</strong> De overeenkomst tussen Luscombe Coaching en de client voor het leveren van coaching diensten</li>
+                <li><strong>Diensten:</strong> Alle door Luscombe Coaching aangeboden coaching, training, personal training en adviezen</li>
+                <li><strong>Website:</strong> De internetomgeving van Luscombe Coaching</li>
               </ul>
 
               <h2 className="text-2xl font-semibold text-[#090c45] mb-4 mt-8">Artikel 2 - Toepasselijkheid</h2>
               <p className="text-gray-700 mb-6">
-                Deze algemene voorwaarden zijn van toepassing op alle offertes, overeenkomsten en diensten van Luscombe Lifestyle. Door gebruik te maken van onze diensten of door een overeenkomst aan te gaan, aanvaardt de client uitdrukkelijk deze voorwaarden. Afwijkingen van deze voorwaarden zijn slechts geldig indien deze schriftelijk zijn overeengekomen.
+                Deze algemene voorwaarden zijn van toepassing op alle offertes, overeenkomsten en diensten van Luscombe Coaching. Door gebruik te maken van onze diensten of door een overeenkomst aan te gaan, aanvaardt de client uitdrukkelijk deze voorwaarden. Afwijkingen van deze voorwaarden zijn slechts geldig indien deze schriftelijk zijn overeengekomen.
               </p>
 
               <h2 className="text-2xl font-semibold text-[#090c45] mb-4 mt-8">Artikel 3 - Totstandkoming overeenkomst</h2>
@@ -66,7 +66,7 @@ const AlgemeneVoorwaarden = () => {
                 4.3 Bij niet-tijdige betaling is de client van rechtswege in verzuim, zonder dat ingebrekestelling is vereist.
               </p>
               <p className="text-gray-700 mb-4">
-                4.4 Bij betalingsachterstand heeft Luscombe Lifestyle het recht de dienstverlening op te schorten.
+                4.4 Bij betalingsachterstand heeft Luscombe Coaching het recht de dienstverlening op te schorten.
               </p>
               <p className="text-gray-700 mb-6">
                 4.5 Alle kosten van invordering, zowel gerechtelijk als buitengerechtelijk, komen voor rekening van de client.
@@ -84,9 +84,9 @@ const AlgemeneVoorwaarden = () => {
                 <li>De aanwijzingen van de coach op te volgen</li>
               </ul>
 
-              <h2 className="text-2xl font-semibold text-[#090c45] mb-4 mt-8">Artikel 6 - Verplichtingen van Luscombe Lifestyle</h2>
+              <h2 className="text-2xl font-semibold text-[#090c45] mb-4 mt-8">Artikel 6 - Verplichtingen van Luscombe Coaching</h2>
               <p className="text-gray-700 mb-4">
-                Luscombe Lifestyle verplicht zich om:
+                Luscombe Coaching verplicht zich om:
               </p>
               <ul className="list-disc pl-6 text-gray-700 mb-6">
                 <li>Professionele begeleiding te bieden volgens de gemaakte afspraken</li>
@@ -98,16 +98,16 @@ const AlgemeneVoorwaarden = () => {
 
               <h2 className="text-2xl font-semibold text-[#090c45] mb-4 mt-8">Artikel 7 - Aansprakelijkheid</h2>
               <p className="text-gray-700 mb-4">
-                7.1 Luscombe Lifestyle is niet aansprakelijk voor blessures of letselschade die ontstaat tijdens het volgen van de training.
+                7.1 Luscombe Coaching is niet aansprakelijk voor blessures of letselschade die ontstaat tijdens het volgen van de training.
               </p>
               <p className="text-gray-700 mb-4">
                 7.2 De client is zelf verantwoordelijk voor het inschatten van zijn/haar fysieke capaciteiten.
               </p>
               <p className="text-gray-700 mb-4">
-                7.3 Luscombe Lifestyle is niet aansprakelijk voor verlies, diefstal of beschadiging van eigendommen.
+                7.3 Luscombe Coaching is niet aansprakelijk voor verlies, diefstal of beschadiging van eigendommen.
               </p>
               <p className="text-gray-700 mb-6">
-                7.4 De aansprakelijkheid van Luscombe Lifestyle is te allen tijde beperkt tot het bedrag van de door de verzekeringsmaatschappij uitgekeerde som.
+                7.4 De aansprakelijkheid van Luscombe Coaching is te allen tijde beperkt tot het bedrag van de door de verzekeringsmaatschappij uitgekeerde som.
               </p>
 
               <h2 className="text-2xl font-semibold text-[#090c45] mb-4 mt-8">Artikel 8 - Annulering en wijzigingen</h2>
@@ -124,7 +124,7 @@ const AlgemeneVoorwaarden = () => {
                 8.4 Annulering van het volledige traject dient schriftelijk te gebeuren met inachtneming van een opzegtermijn van 14 dagen.
               </p>
               <p className="text-gray-700 mb-6">
-                8.5 Luscombe Lifestyle behoudt zich het recht voor trainingen te verplaatsen bij ziekte, vakantie of overmacht.
+                8.5 Luscombe Coaching behoudt zich het recht voor trainingen te verplaatsen bij ziekte, vakantie of overmacht.
               </p>
 
               <h2 className="text-2xl font-semibold text-[#090c45] mb-4 mt-8">Artikel 9 - Klachtenprocedure</h2>
@@ -135,7 +135,7 @@ const AlgemeneVoorwaarden = () => {
                 9.2 De klacht dient duidelijk omschreven te zijn, vergezeld van relevante bewijsstukken.
               </p>
               <p className="text-gray-700 mb-4">
-                9.3 Luscombe Lifestyle streeft ernaar klachten binnen 14 dagen na ontvangst in behandeling te nemen.
+                9.3 Luscombe Coaching streeft ernaar klachten binnen 14 dagen na ontvangst in behandeling te nemen.
               </p>
               <p className="text-gray-700 mb-6">
                 9.4 Indien de klacht niet naar tevredenheid wordt opgelost, kan de client zich wenden tot de geschillencommissie.
@@ -143,12 +143,12 @@ const AlgemeneVoorwaarden = () => {
 
               <h2 className="text-2xl font-semibold text-[#090c45] mb-4 mt-8">Artikel 10 - Geheimhouding</h2>
               <p className="text-gray-700 mb-6">
-                Zowel Luscombe Lifestyle als de client zijn verplicht tot geheimhouding van alle vertrouwelijke informatie die tijdens de coaching wordt uitgewisseld. Deze geheimhoudingsplicht geldt ook na beëindiging van de overeenkomst.
+                Zowel Luscombe Coaching als de client zijn verplicht tot geheimhouding van alle vertrouwelijke informatie die tijdens de coaching wordt uitgewisseld. Deze geheimhoudingsplicht geldt ook na beëindiging van de overeenkomst.
               </p>
 
               <h2 className="text-2xl font-semibold text-[#090c45] mb-4 mt-8">Artikel 11 - Intellectueel eigendom</h2>
               <p className="text-gray-700 mb-4">
-                11.1 Alle door Luscombe Lifestyle verstrekte materialen, trainingsschema's, voedingsplannen en adviezen vallen onder het intellectueel eigendom van Luscombe Lifestyle.
+                11.1 Alle door Luscombe Coaching verstrekte materialen, trainingsschema's, voedingsplannen en adviezen vallen onder het intellectueel eigendom van Luscombe Coaching.
               </p>
               <p className="text-gray-700 mb-4">
                 11.2 Het is de client niet toegestaan deze materialen zonder schriftelijke toestemming te vermenigvuldigen of te verspreiden.
@@ -159,7 +159,7 @@ const AlgemeneVoorwaarden = () => {
 
               <h2 className="text-2xl font-semibold text-[#090c45] mb-4 mt-8">Artikel 12 - Overmacht</h2>
               <p className="text-gray-700 mb-6">
-                Luscombe Lifestyle is niet gehouden tot het nakomen van enige verplichting indien zij daartoe verhinderd is als gevolg van overmacht. Onder overmacht wordt verstaan elke van haar wil onafhankelijke omstandigheid, waardoor de nakoming van haar verplichtingen naar redelijkheid en billijkheid niet van haar kan worden verlangd.
+                Luscombe Coaching is niet gehouden tot het nakomen van enige verplichting indien zij daartoe verhinderd is als gevolg van overmacht. Onder overmacht wordt verstaan elke van haar wil onafhankelijke omstandigheid, waardoor de nakoming van haar verplichtingen naar redelijkheid en billijkheid niet van haar kan worden verlangd.
               </p>
 
               <h2 className="text-2xl font-semibold text-[#090c45] mb-4 mt-8">Artikel 13 - Wederzijdse binding</h2>
@@ -172,7 +172,7 @@ const AlgemeneVoorwaarden = () => {
                 14.1 Op deze overeenkomst is Nederlands recht van toepassing.
               </p>
               <p className="text-gray-700 mb-4">
-                14.2 Eventuele geschillen worden in eerste aanleg voorgelegd aan de bevoegde rechter in het arrondissement waar Luscombe Lifestyle gevestigd is.
+                14.2 Eventuele geschillen worden in eerste aanleg voorgelegd aan de bevoegde rechter in het arrondissement waar Luscombe Coaching gevestigd is.
               </p>
               <p className="text-gray-700 mb-6">
                 14.3 Partijen zullen echter eerst een beroep doen op mediation voordat zij de rechter inschakelen.
@@ -181,7 +181,7 @@ const AlgemeneVoorwaarden = () => {
               <h2 className="text-2xl font-semibold text-[#090c45] mb-4 mt-8">Artikel 15 - Contactgegevens</h2>
               <div className="bg-gray-50 p-4 rounded-lg">
                 <p className="text-gray-700 mb-2">
-                  <strong>Luscombe Lifestyle</strong><br/>
+                  <strong>Luscombe Coaching</strong><br/>
                   E-mail: luscombe.training@gmail.com<br/>
                   Telefoon: +31 6 146 292 17<br/>
                   Adres: First Class Sports Papendrecht<br/>

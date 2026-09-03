@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
     // Debug: log form data
     console.log('Form data:', formData)
     
-    const subject = encodeURIComponent('Contact from Luscombe Lifestyle')
+    const subject = encodeURIComponent('Contact from Luscombe Coaching')
     const body = encodeURIComponent(
       `Name: ${formData.name}\n` +
       `Email: ${formData.email}\n` +
@@ -55,8 +55,8 @@ const Contact: React.FC = () => {
 
   const shareUrl = typeof window !== 'undefined' ? window.location.href : ''
   const shareText = language === 'nl' 
-    ? 'Bekijk Luscombe Lifestyle - Transformeer je lichaam én je leven'
-    : 'Check out Luscombe Lifestyle - Transform your body and your life'
+    ? 'Bekijk Luscombe Coaching - Transformeer je lichaam én je leven'
+    : 'Check out Luscombe Coaching - Transform your body and your life'
 
   const handleShare = (platform: string) => {
     const urls = {

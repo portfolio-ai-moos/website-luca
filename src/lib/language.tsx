@@ -21,7 +21,7 @@ const translations = {
     
     // Hero Section
     tagline: 'Transformeer je lichaam én je leven.',
-    heroSubtitle: 'Welkom bij Luscombe Lifestyle Coaching, waar ik je begeleid naar een leven in balans en vol energie.',
+    heroSubtitle: 'Welkom bij Luscombe Coaching, waar ik je begeleid naar een leven in balans en vol energie.',
     heroDescription: 'Ik help je jouw persoonlijke doelen te bereiken door middel van professionele online coaching en/of personal training. Klaar om de eerste stap te zetten?',
     ctaStart: 'Laten we beginnen',
     
@@ -64,7 +64,7 @@ const translations = {
     
     // Testimonials
     testimonialsTitle: 'Succesverhalen',
-    testimonialsSubtitle: 'Lees en zie hoe Luscombe Lifestyle anderen heeft geholpen hun doelen te bereiken.',
+    testimonialsSubtitle: 'Lees en zie hoe Luscombe Coaching anderen heeft geholpen hun doelen te bereiken.',
     
     // Contact
     contactTitle: 'Plan je gratis consult in',
@@ -93,7 +93,7 @@ const translations = {
     
     // Hero Section
     tagline: 'Transform your body and your life.',
-    heroSubtitle: 'Welcome to Luscombe Lifestyle Coaching, where I guide you to a life in balance and full of energy.',
+    heroSubtitle: 'Welcome to Luscombe Coaching, where I guide you to a life in balance and full of energy.',
     heroDescription: 'I help you achieve your personal goals through professional online coaching and/or personal training. Ready to take the first step?',
     ctaStart: "Let's start",
     
@@ -136,7 +136,7 @@ const translations = {
     
     // Testimonials
     testimonialsTitle: 'Success Stories',
-    testimonialsSubtitle: 'Read and see how Luscombe Lifestyle has helped others achieve their goals.',
+    testimonialsSubtitle: 'Read and see how Luscombe Coaching has helped others achieve their goals.',
     
     // Contact
     contactTitle: 'Book your free consultation',

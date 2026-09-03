@@ -34,7 +34,7 @@ const PrivacyPolicy = () => {
             <div className="prose prose-lg max-w-none">
               <h2 className="text-2xl font-semibold text-[#090c45] mb-4">1. Inleiding</h2>
               <p className="text-gray-700 mb-6">
-                Welkom bij Luscombe Lifestyle. Deze privacyverklaring is opgesteld om te laten zien hoe wij uw persoonsgegevens verzamelen, gebruiken en beschermen. Wij hechten veel waarde aan uw privacy en doen er alles aan om uw persoonsgegevens zorgvuldig te behandelen.
+                Welkom bij Luscombe Coaching. Deze privacyverklaring is opgesteld om te laten zien hoe wij uw persoonsgegevens verzamelen, gebruiken en beschermen. Wij hechten veel waarde aan uw privacy en doen er alles aan om uw persoonsgegevens zorgvuldig te behandelen.
               </p>
 
               <h2 className="text-2xl font-semibold text-[#090c45] mb-4 mt-8">2. Gegevens die wij verzamelen</h2>

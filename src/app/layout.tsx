@@ -16,9 +16,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Luscombe Lifestyle - Transformeer je lichaam én je leven",
+  title: "Luscombe Coaching - Transformeer je lichaam én je leven",
   description: "Professionele online coaching en personal training voor duurzame resultaten. Luca helpt je jouw persoonlijke doelen te bereiken.",
-  keywords: "personal training, online coaching, fitness, fysiotherapie, rotterdam, luscombe lifestyle",
+  keywords: "personal training, online coaching, fitness, fysiotherapie, rotterdam, luscombe coaching",
   authors: [{ name: "Luca Luscombe" }],
   icons: {
     icon: '/favicon.ico',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     apple: '/favicon.ico',
   },
   openGraph: {
-    title: "Luscombe Lifestyle",
+    title: "Luscombe Coaching",
     description: "Transformeer je lichaam én je leven",
     type: "website",
     locale: "nl_NL",

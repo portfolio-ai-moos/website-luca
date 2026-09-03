@@ -52,7 +52,7 @@ const Header: React.FC = () => {
           >
             <img
               src="/images/logo.png"
-              alt="Luscombe Lifestyle Logo"
+              alt="Luscombe Coaching Logo"
               className="w-16 h-16 sm:w-20 sm:h-20 md:w-32 md:h-32 lg:w-48 lg:h-48 xl:w-56 xl:h-56"
             />
           </motion.div>
